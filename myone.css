@@ -1,0 +1,29 @@
+#first {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: inline-block;
+    border: 15px solid white;
+    border-top-color: orange;
+    border-bottom-color: orange;
+    background-color: black;
+}
+ 
+.fcl{
+    border-radius: 50%;
+}
+
+#first:hover{
+    animation-name: myanimation;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+    /*animation-direction: alternate-reverse;*/
+    animation-timing-function: linear;
+    animation-delay: 0ms;
+}
+
+@keyframes myanimation {
+    0% {transform: rotate(0deg);}
+    50%{transform: rotate(180deg);}
+    100%{transform: rotate(360deg);}
+}
